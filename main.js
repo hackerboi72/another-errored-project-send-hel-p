@@ -10,18 +10,18 @@ var marsarray = ["mars1.png", "mars2.png", "mars3.png", "mars4.png"]
 var randomnumber = Math.floor(Math.random() * 4) 
 background = marsarray[randomnumber]
 function justarandomfunction() {
-    var stupidimages = new Image(); 
+    stupidimages = new Image(); 
     stupidimages.onload = anotherbackgroundfunction; 
     stupidimages.src = background;  
-    var ihatemars = new Image(); 
+    ihatemars = new Image(); 
     ihatemars.onload = roverimgfunciton; 
     ihatemars.src = roverimg;  
 }
 function anotherbackgroundfunction() {  
-    canvaslol.drawImage(background, 0, 0, canvas.width, canvas.height);
+    canvaslol.drawImage(stupidimages, 0, 0, canvas.width, canvas.height);
 }
 function roverimgfunciton() { 
-    canvaslol.drawImage(roverimg, roverx, rovery, roverwidth, roverheight);
+    canvaslol.drawImage(ihatemars, roverx, rovery, roverwidth, roverheight);
 }
 window.addEventListener("keydown", my_keydown);
 function my_keydown(e) {
